@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true
+  },
+  "tasks": {
+    "publish": "echo 'published!'",
+    "test": "deno test --allow-net .",
+    "dev": "deno run --check --allow-net --allow-read=./ --watch ./server/main.ts",
+    "start": "deno run --no-check --allow-net --allow-read=./ --watch ./server/main.ts"
+  }
+}

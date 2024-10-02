@@ -1,0 +1,17 @@
+{
+  "name": "Deno",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "vscode": {
+      "extensions": [
+        "denoland.vscode-deno"
+      ]
+    }
+  },
+  "postStartCommand": "deno task start",
+  "forwardPorts": [4000, 8080],
+  "remoteUser": "vscode"
+}
